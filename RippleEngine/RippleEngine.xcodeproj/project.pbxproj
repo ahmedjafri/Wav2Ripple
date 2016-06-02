@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C80018EC1CF9410C00025072 /* RippleEngine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C80018EB1CF9410C00025072 /* RippleEngine.hpp */; };
+		C80018EE1CF9410C00025072 /* RippleEnginePriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C80018ED1CF9410C00025072 /* RippleEnginePriv.hpp */; };
+		C80018F01CF9410C00025072 /* RippleEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C80018EF1CF9410C00025072 /* RippleEngine.cpp */; };
+		C800190B1CF9415700025072 /* Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = C800190A1CF9415700025072 /* Globals.h */; };
+		C80019181CF9458D00025072 /* wave.h in Headers */ = {isa = PBXBuildFile; fileRef = C80019171CF9458D00025072 /* wave.h */; };
+		C818EDA11CFB83C000B0ECCD /* BPMAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C818ED861CFB83C000B0ECCD /* BPMAnalyzer.cpp */; };
+		C818EDA21CFB83C000B0ECCD /* BPMAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED871CFB83C000B0ECCD /* BPMAnalyzer.h */; };
+		C818EDA31CFB83C000B0ECCD /* dywapitchtrack.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED881CFB83C000B0ECCD /* dywapitchtrack.c */; };
+		C818EDA41CFB83C000B0ECCD /* dywapitchtrack.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED891CFB83C000B0ECCD /* dywapitchtrack.h */; };
+		C818EDA51CFB83C000B0ECCD /* EqualLoudnessFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED8A1CFB83C000B0ECCD /* EqualLoudnessFilter.h */; };
+		C818EDA61CFB83C000B0ECCD /* _kiss_fft_guts.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED8C1CFB83C000B0ECCD /* _kiss_fft_guts.h */; };
+		C818EDA71CFB83C000B0ECCD /* kiss_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED8D1CFB83C000B0ECCD /* kiss_fft.c */; };
+		C818EDA81CFB83C000B0ECCD /* kiss_fft.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED8E1CFB83C000B0ECCD /* kiss_fft.h */; };
+		C818EDA91CFB83C000B0ECCD /* kissfft.hh in Headers */ = {isa = PBXBuildFile; fileRef = C818ED8F1CFB83C000B0ECCD /* kissfft.hh */; };
+		C818EDAA1CFB83C000B0ECCD /* kfc.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED911CFB83C000B0ECCD /* kfc.c */; };
+		C818EDAB1CFB83C000B0ECCD /* kfc.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED921CFB83C000B0ECCD /* kfc.h */; };
+		C818EDAC1CFB83C000B0ECCD /* kiss_fastfir.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED931CFB83C000B0ECCD /* kiss_fastfir.c */; };
+		C818EDAD1CFB83C000B0ECCD /* kiss_fftnd.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED941CFB83C000B0ECCD /* kiss_fftnd.c */; };
+		C818EDAE1CFB83C000B0ECCD /* kiss_fftnd.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED951CFB83C000B0ECCD /* kiss_fftnd.h */; };
+		C818EDAF1CFB83C000B0ECCD /* kiss_fftndr.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED961CFB83C000B0ECCD /* kiss_fftndr.c */; };
+		C818EDB01CFB83C000B0ECCD /* kiss_fftndr.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED971CFB83C000B0ECCD /* kiss_fftndr.h */; };
+		C818EDB11CFB83C000B0ECCD /* kiss_fftr.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED981CFB83C000B0ECCD /* kiss_fftr.c */; };
+		C818EDB21CFB83C000B0ECCD /* kiss_fftr.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED991CFB83C000B0ECCD /* kiss_fftr.h */; };
+		C818EDB31CFB83C000B0ECCD /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = C818ED9A1CFB83C000B0ECCD /* Makefile */; };
+		C818EDB41CFB83C000B0ECCD /* RPAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C818ED9B1CFB83C000B0ECCD /* RPAnalyzer.cpp */; };
+		C818EDB51CFB83C000B0ECCD /* RPAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED9C1CFB83C000B0ECCD /* RPAnalyzer.h */; };
+		C818EDB61CFB83C000B0ECCD /* RPCommonDSPFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C818ED9D1CFB83C000B0ECCD /* RPCommonDSPFunctions.cpp */; };
+		C818EDB71CFB83C000B0ECCD /* RPCommonDSPFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED9E1CFB83C000B0ECCD /* RPCommonDSPFunctions.h */; };
+		C818EDB81CFB83C000B0ECCD /* TimeToFrequencyTransformer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C818ED9F1CFB83C000B0ECCD /* TimeToFrequencyTransformer.cpp */; };
+		C818EDB91CFB83C000B0ECCD /* TimeToFrequencyTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = C818EDA01CFB83C000B0ECCD /* TimeToFrequencyTransformer.h */; };
+		C818EDBD1CFB84F200B0ECCD /* FileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = C818EDBA1CFB84F200B0ECCD /* FileReader.h */; };
+		C818EDBE1CFB84F200B0ECCD /* RippleReader.h in Headers */ = {isa = PBXBuildFile; fileRef = C818EDBB1CFB84F200B0ECCD /* RippleReader.h */; };
+		C818EDBF1CFB84F200B0ECCD /* FileReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C818EDBC1CFB84F200B0ECCD /* FileReader.cpp */; };
+		C887EC6E1CFFD56C00ABD53A /* WavReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C887EC6C1CFFD56C00ABD53A /* WavReader.cpp */; };
+		C887EC6F1CFFD56C00ABD53A /* WavReader.h in Headers */ = {isa = PBXBuildFile; fileRef = C887EC6D1CFFD56C00ABD53A /* WavReader.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C80018E81CF9410C00025072 /* libRippleEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRippleEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C80018EB1CF9410C00025072 /* RippleEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RippleEngine.hpp; sourceTree = "<group>"; };
+		C80018ED1CF9410C00025072 /* RippleEnginePriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RippleEnginePriv.hpp; sourceTree = "<group>"; };
+		C80018EF1CF9410C00025072 /* RippleEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RippleEngine.cpp; sourceTree = "<group>"; };
+		C800190A1CF9415700025072 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		C80019171CF9458D00025072 /* wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wave.h; sourceTree = "<group>"; };
+		C818ED861CFB83C000B0ECCD /* BPMAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPMAnalyzer.cpp; sourceTree = "<group>"; };
+		C818ED871CFB83C000B0ECCD /* BPMAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMAnalyzer.h; sourceTree = "<group>"; };
+		C818ED881CFB83C000B0ECCD /* dywapitchtrack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dywapitchtrack.c; sourceTree = "<group>"; };
+		C818ED891CFB83C000B0ECCD /* dywapitchtrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dywapitchtrack.h; sourceTree = "<group>"; };
+		C818ED8A1CFB83C000B0ECCD /* EqualLoudnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualLoudnessFilter.h; sourceTree = "<group>"; };
+		C818ED8C1CFB83C000B0ECCD /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _kiss_fft_guts.h; sourceTree = "<group>"; };
+		C818ED8D1CFB83C000B0ECCD /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fft.c; sourceTree = "<group>"; };
+		C818ED8E1CFB83C000B0ECCD /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fft.h; sourceTree = "<group>"; };
+		C818ED8F1CFB83C000B0ECCD /* kissfft.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kissfft.hh; sourceTree = "<group>"; };
+		C818ED911CFB83C000B0ECCD /* kfc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kfc.c; sourceTree = "<group>"; };
+		C818ED921CFB83C000B0ECCD /* kfc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kfc.h; sourceTree = "<group>"; };
+		C818ED931CFB83C000B0ECCD /* kiss_fastfir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fastfir.c; sourceTree = "<group>"; };
+		C818ED941CFB83C000B0ECCD /* kiss_fftnd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftnd.c; sourceTree = "<group>"; };
+		C818ED951CFB83C000B0ECCD /* kiss_fftnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftnd.h; sourceTree = "<group>"; };
+		C818ED961CFB83C000B0ECCD /* kiss_fftndr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftndr.c; sourceTree = "<group>"; };
+		C818ED971CFB83C000B0ECCD /* kiss_fftndr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftndr.h; sourceTree = "<group>"; };
+		C818ED981CFB83C000B0ECCD /* kiss_fftr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftr.c; sourceTree = "<group>"; };
+		C818ED991CFB83C000B0ECCD /* kiss_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftr.h; sourceTree = "<group>"; };
+		C818ED9A1CFB83C000B0ECCD /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		C818ED9B1CFB83C000B0ECCD /* RPAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RPAnalyzer.cpp; sourceTree = "<group>"; };
+		C818ED9C1CFB83C000B0ECCD /* RPAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPAnalyzer.h; sourceTree = "<group>"; };
+		C818ED9D1CFB83C000B0ECCD /* RPCommonDSPFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RPCommonDSPFunctions.cpp; sourceTree = "<group>"; };
+		C818ED9E1CFB83C000B0ECCD /* RPCommonDSPFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCommonDSPFunctions.h; sourceTree = "<group>"; };
+		C818ED9F1CFB83C000B0ECCD /* TimeToFrequencyTransformer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeToFrequencyTransformer.cpp; sourceTree = "<group>"; };
+		C818EDA01CFB83C000B0ECCD /* TimeToFrequencyTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeToFrequencyTransformer.h; sourceTree = "<group>"; };
+		C818EDBA1CFB84F200B0ECCD /* FileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileReader.h; sourceTree = "<group>"; };
+		C818EDBB1CFB84F200B0ECCD /* RippleReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleReader.h; sourceTree = "<group>"; };
+		C818EDBC1CFB84F200B0ECCD /* FileReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileReader.cpp; sourceTree = "<group>"; };
+		C887EC6C1CFFD56C00ABD53A /* WavReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WavReader.cpp; sourceTree = "<group>"; };
+		C887EC6D1CFFD56C00ABD53A /* WavReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavReader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C80018E51CF9410C00025072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C80018DF1CF9410C00025072 = {
+			isa = PBXGroup;
+			children = (
+				C80018EA1CF9410C00025072 /* RippleEngine */,
+				C80018E91CF9410C00025072 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C80018E91CF9410C00025072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C80018E81CF9410C00025072 /* libRippleEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C80018EA1CF9410C00025072 /* RippleEngine */ = {
+			isa = PBXGroup;
+			children = (
+				C818EDBB1CFB84F200B0ECCD /* RippleReader.h */,
+				C818EDBA1CFB84F200B0ECCD /* FileReader.h */,
+				C818EDBC1CFB84F200B0ECCD /* FileReader.cpp */,
+				C887EC6D1CFFD56C00ABD53A /* WavReader.h */,
+				C887EC6C1CFFD56C00ABD53A /* WavReader.cpp */,
+				C818ED851CFB83C000B0ECCD /* dsp */,
+				C800190A1CF9415700025072 /* Globals.h */,
+				C80018EB1CF9410C00025072 /* RippleEngine.hpp */,
+				C80018ED1CF9410C00025072 /* RippleEnginePriv.hpp */,
+				C80018EF1CF9410C00025072 /* RippleEngine.cpp */,
+				C80019171CF9458D00025072 /* wave.h */,
+			);
+			path = RippleEngine;
+			sourceTree = "<group>";
+		};
+		C818ED851CFB83C000B0ECCD /* dsp */ = {
+			isa = PBXGroup;
+			children = (
+				C818ED861CFB83C000B0ECCD /* BPMAnalyzer.cpp */,
+				C818ED871CFB83C000B0ECCD /* BPMAnalyzer.h */,
+				C818ED881CFB83C000B0ECCD /* dywapitchtrack.c */,
+				C818ED891CFB83C000B0ECCD /* dywapitchtrack.h */,
+				C818ED8A1CFB83C000B0ECCD /* EqualLoudnessFilter.h */,
+				C818ED8B1CFB83C000B0ECCD /* fft */,
+				C818ED9B1CFB83C000B0ECCD /* RPAnalyzer.cpp */,
+				C818ED9C1CFB83C000B0ECCD /* RPAnalyzer.h */,
+				C818ED9D1CFB83C000B0ECCD /* RPCommonDSPFunctions.cpp */,
+				C818ED9E1CFB83C000B0ECCD /* RPCommonDSPFunctions.h */,
+				C818ED9F1CFB83C000B0ECCD /* TimeToFrequencyTransformer.cpp */,
+				C818EDA01CFB83C000B0ECCD /* TimeToFrequencyTransformer.h */,
+			);
+			path = dsp;
+			sourceTree = "<group>";
+		};
+		C818ED8B1CFB83C000B0ECCD /* fft */ = {
+			isa = PBXGroup;
+			children = (
+				C818ED8C1CFB83C000B0ECCD /* _kiss_fft_guts.h */,
+				C818ED8D1CFB83C000B0ECCD /* kiss_fft.c */,
+				C818ED8E1CFB83C000B0ECCD /* kiss_fft.h */,
+				C818ED8F1CFB83C000B0ECCD /* kissfft.hh */,
+				C818ED901CFB83C000B0ECCD /* tools */,
+			);
+			path = fft;
+			sourceTree = "<group>";
+		};
+		C818ED901CFB83C000B0ECCD /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				C818ED911CFB83C000B0ECCD /* kfc.c */,
+				C818ED921CFB83C000B0ECCD /* kfc.h */,
+				C818ED931CFB83C000B0ECCD /* kiss_fastfir.c */,
+				C818ED941CFB83C000B0ECCD /* kiss_fftnd.c */,
+				C818ED951CFB83C000B0ECCD /* kiss_fftnd.h */,
+				C818ED961CFB83C000B0ECCD /* kiss_fftndr.c */,
+				C818ED971CFB83C000B0ECCD /* kiss_fftndr.h */,
+				C818ED981CFB83C000B0ECCD /* kiss_fftr.c */,
+				C818ED991CFB83C000B0ECCD /* kiss_fftr.h */,
+				C818ED9A1CFB83C000B0ECCD /* Makefile */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C80018E61CF9410C00025072 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C818EDAB1CFB83C000B0ECCD /* kfc.h in Headers */,
+				C818EDAE1CFB83C000B0ECCD /* kiss_fftnd.h in Headers */,
+				C818EDA91CFB83C000B0ECCD /* kissfft.hh in Headers */,
+				C818EDB91CFB83C000B0ECCD /* TimeToFrequencyTransformer.h in Headers */,
+				C818EDB51CFB83C000B0ECCD /* RPAnalyzer.h in Headers */,
+				C818EDBE1CFB84F200B0ECCD /* RippleReader.h in Headers */,
+				C818EDA61CFB83C000B0ECCD /* _kiss_fft_guts.h in Headers */,
+				C818EDA51CFB83C000B0ECCD /* EqualLoudnessFilter.h in Headers */,
+				C887EC6F1CFFD56C00ABD53A /* WavReader.h in Headers */,
+				C818EDA21CFB83C000B0ECCD /* BPMAnalyzer.h in Headers */,
+				C818EDB71CFB83C000B0ECCD /* RPCommonDSPFunctions.h in Headers */,
+				C818EDA81CFB83C000B0ECCD /* kiss_fft.h in Headers */,
+				C800190B1CF9415700025072 /* Globals.h in Headers */,
+				C818EDA41CFB83C000B0ECCD /* dywapitchtrack.h in Headers */,
+				C80018EC1CF9410C00025072 /* RippleEngine.hpp in Headers */,
+				C818EDBD1CFB84F200B0ECCD /* FileReader.h in Headers */,
+				C818EDB21CFB83C000B0ECCD /* kiss_fftr.h in Headers */,
+				C818EDB01CFB83C000B0ECCD /* kiss_fftndr.h in Headers */,
+				C80019181CF9458D00025072 /* wave.h in Headers */,
+				C80018EE1CF9410C00025072 /* RippleEnginePriv.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C80018E71CF9410C00025072 /* RippleEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C80018F31CF9410C00025072 /* Build configuration list for PBXNativeTarget "RippleEngine" */;
+			buildPhases = (
+				C80018E41CF9410C00025072 /* Sources */,
+				C80018E51CF9410C00025072 /* Frameworks */,
+				C80018E61CF9410C00025072 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RippleEngine;
+			productName = RippleEngine;
+			productReference = C80018E81CF9410C00025072 /* libRippleEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C80018E01CF9410C00025072 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Ripple;
+				TargetAttributes = {
+					C80018E71CF9410C00025072 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = C80018E31CF9410C00025072 /* Build configuration list for PBXProject "RippleEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C80018DF1CF9410C00025072;
+			productRefGroup = C80018E91CF9410C00025072 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C80018E71CF9410C00025072 /* RippleEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C80018E41CF9410C00025072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C818EDB31CFB83C000B0ECCD /* Makefile in Sources */,
+				C818EDB81CFB83C000B0ECCD /* TimeToFrequencyTransformer.cpp in Sources */,
+				C818EDBF1CFB84F200B0ECCD /* FileReader.cpp in Sources */,
+				C887EC6E1CFFD56C00ABD53A /* WavReader.cpp in Sources */,
+				C818EDAA1CFB83C000B0ECCD /* kfc.c in Sources */,
+				C818EDAD1CFB83C000B0ECCD /* kiss_fftnd.c in Sources */,
+				C818EDA71CFB83C000B0ECCD /* kiss_fft.c in Sources */,
+				C818EDB61CFB83C000B0ECCD /* RPCommonDSPFunctions.cpp in Sources */,
+				C818EDAF1CFB83C000B0ECCD /* kiss_fftndr.c in Sources */,
+				C80018F01CF9410C00025072 /* RippleEngine.cpp in Sources */,
+				C818EDA31CFB83C000B0ECCD /* dywapitchtrack.c in Sources */,
+				C818EDA11CFB83C000B0ECCD /* BPMAnalyzer.cpp in Sources */,
+				C818EDAC1CFB83C000B0ECCD /* kiss_fastfir.c in Sources */,
+				C818EDB11CFB83C000B0ECCD /* kiss_fftr.c in Sources */,
+				C818EDB41CFB83C000B0ECCD /* RPAnalyzer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C80018F11CF9410C00025072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C80018F21CF9410C00025072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C80018F41CF9410C00025072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C80018F51CF9410C00025072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C80018E31CF9410C00025072 /* Build configuration list for PBXProject "RippleEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C80018F11CF9410C00025072 /* Debug */,
+				C80018F21CF9410C00025072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C80018F31CF9410C00025072 /* Build configuration list for PBXNativeTarget "RippleEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C80018F41CF9410C00025072 /* Debug */,
+				C80018F51CF9410C00025072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C80018E01CF9410C00025072 /* Project object */;
+}
