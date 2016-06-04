@@ -9,9 +9,12 @@
 #include "WavReader.h"
 #include <exception>
 #include <cstdlib>
+#include <cstring>
 
 unsigned char buffer4[4];
 unsigned char buffer2[2];
+
+using namespace std;
 
 char* seconds_to_time(float raw_seconds);
 

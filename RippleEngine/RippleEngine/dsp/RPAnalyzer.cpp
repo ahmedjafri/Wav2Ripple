@@ -31,14 +31,16 @@
 #include <cassert>
 #include <stdio.h>
 
-#if __APPLE__
+#ifdef __APPLE__
 
+#elif __linux__
+#include <sys/stat.h>
 #else
 #include <Windows.h>
 #include <tchar.h>
 #endif
 
-#if __APPLE__
+#if defined(__APPLE__)
 static bool fileExists(const char* filePath)
 {
 	if (access(filePath, F_OK) != -1) {
@@ -47,6 +49,12 @@ static bool fileExists(const char* filePath)
 	else {
 		return FALSE;
 	}
+}
+#elif defined(__linux__)
+static bool fileExists(const char *filename) {
+    struct stat st;
+    int result = stat(filename, &st);
+    return result == 0;
 }
 #else
 int fileExists(TCHAR * file)
@@ -82,11 +90,12 @@ pitches(std::vector<float>(0))
     pathToPCMFile = inPathToPCMFile;
     reader = new FileReader(inPathToPCMFile.c_str());
     
-#if __APPLE__
+#if defined(__APPLE__) || defined(__linux__)
 	const char *rawFilePathToPCM = pathToPCMFile.c_str();
 #else
 	TCHAR* rawFilePathToPCM = (TCHAR*)pathToPCMFile.c_str();
 #endif
+
     if(!fileExists(rawFilePathToPCM))
     {
         throw std::runtime_error("PCM file does not exist.");
