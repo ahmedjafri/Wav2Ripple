@@ -14,21 +14,14 @@
 		C80019181CF9458D00025072 /* wave.h in Headers */ = {isa = PBXBuildFile; fileRef = C80019171CF9458D00025072 /* wave.h */; };
 		C818EDA11CFB83C000B0ECCD /* BPMAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C818ED861CFB83C000B0ECCD /* BPMAnalyzer.cpp */; };
 		C818EDA21CFB83C000B0ECCD /* BPMAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED871CFB83C000B0ECCD /* BPMAnalyzer.h */; };
-		C818EDA31CFB83C000B0ECCD /* dywapitchtrack.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED881CFB83C000B0ECCD /* dywapitchtrack.c */; };
 		C818EDA41CFB83C000B0ECCD /* dywapitchtrack.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED891CFB83C000B0ECCD /* dywapitchtrack.h */; };
 		C818EDA51CFB83C000B0ECCD /* EqualLoudnessFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED8A1CFB83C000B0ECCD /* EqualLoudnessFilter.h */; };
 		C818EDA61CFB83C000B0ECCD /* _kiss_fft_guts.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED8C1CFB83C000B0ECCD /* _kiss_fft_guts.h */; };
-		C818EDA71CFB83C000B0ECCD /* kiss_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED8D1CFB83C000B0ECCD /* kiss_fft.c */; };
 		C818EDA81CFB83C000B0ECCD /* kiss_fft.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED8E1CFB83C000B0ECCD /* kiss_fft.h */; };
 		C818EDA91CFB83C000B0ECCD /* kissfft.hh in Headers */ = {isa = PBXBuildFile; fileRef = C818ED8F1CFB83C000B0ECCD /* kissfft.hh */; };
-		C818EDAA1CFB83C000B0ECCD /* kfc.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED911CFB83C000B0ECCD /* kfc.c */; };
 		C818EDAB1CFB83C000B0ECCD /* kfc.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED921CFB83C000B0ECCD /* kfc.h */; };
-		C818EDAC1CFB83C000B0ECCD /* kiss_fastfir.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED931CFB83C000B0ECCD /* kiss_fastfir.c */; };
-		C818EDAD1CFB83C000B0ECCD /* kiss_fftnd.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED941CFB83C000B0ECCD /* kiss_fftnd.c */; };
 		C818EDAE1CFB83C000B0ECCD /* kiss_fftnd.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED951CFB83C000B0ECCD /* kiss_fftnd.h */; };
-		C818EDAF1CFB83C000B0ECCD /* kiss_fftndr.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED961CFB83C000B0ECCD /* kiss_fftndr.c */; };
 		C818EDB01CFB83C000B0ECCD /* kiss_fftndr.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED971CFB83C000B0ECCD /* kiss_fftndr.h */; };
-		C818EDB11CFB83C000B0ECCD /* kiss_fftr.c in Sources */ = {isa = PBXBuildFile; fileRef = C818ED981CFB83C000B0ECCD /* kiss_fftr.c */; };
 		C818EDB21CFB83C000B0ECCD /* kiss_fftr.h in Headers */ = {isa = PBXBuildFile; fileRef = C818ED991CFB83C000B0ECCD /* kiss_fftr.h */; };
 		C818EDB31CFB83C000B0ECCD /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = C818ED9A1CFB83C000B0ECCD /* Makefile */; };
 		C818EDB41CFB83C000B0ECCD /* RPAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C818ED9B1CFB83C000B0ECCD /* RPAnalyzer.cpp */; };
@@ -42,6 +35,12 @@
 		C818EDBF1CFB84F200B0ECCD /* FileReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C818EDBC1CFB84F200B0ECCD /* FileReader.cpp */; };
 		C887EC6E1CFFD56C00ABD53A /* WavReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C887EC6C1CFFD56C00ABD53A /* WavReader.cpp */; };
 		C887EC6F1CFFD56C00ABD53A /* WavReader.h in Headers */ = {isa = PBXBuildFile; fileRef = C887EC6D1CFFD56C00ABD53A /* WavReader.h */; };
+		C8E78B2B1D0297BF00BE5CC7 /* kfc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8E78B261D0297BF00BE5CC7 /* kfc.cpp */; };
+		C8E78B2C1D0297BF00BE5CC7 /* kiss_fastfir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8E78B271D0297BF00BE5CC7 /* kiss_fastfir.cpp */; };
+		C8E78B2D1D0297BF00BE5CC7 /* kiss_fftnd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8E78B281D0297BF00BE5CC7 /* kiss_fftnd.cpp */; };
+		C8E78B2E1D0297BF00BE5CC7 /* kiss_fftndr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8E78B291D0297BF00BE5CC7 /* kiss_fftndr.cpp */; };
+		C8E78B2F1D0297BF00BE5CC7 /* kiss_fftr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8E78B2A1D0297BF00BE5CC7 /* kiss_fftr.cpp */; };
+		C8E78B311D0297C800BE5CC7 /* kiss_fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8E78B301D0297C800BE5CC7 /* kiss_fft.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,21 +52,14 @@
 		C80019171CF9458D00025072 /* wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wave.h; sourceTree = "<group>"; };
 		C818ED861CFB83C000B0ECCD /* BPMAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPMAnalyzer.cpp; sourceTree = "<group>"; };
 		C818ED871CFB83C000B0ECCD /* BPMAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMAnalyzer.h; sourceTree = "<group>"; };
-		C818ED881CFB83C000B0ECCD /* dywapitchtrack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dywapitchtrack.c; sourceTree = "<group>"; };
 		C818ED891CFB83C000B0ECCD /* dywapitchtrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dywapitchtrack.h; sourceTree = "<group>"; };
 		C818ED8A1CFB83C000B0ECCD /* EqualLoudnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualLoudnessFilter.h; sourceTree = "<group>"; };
 		C818ED8C1CFB83C000B0ECCD /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _kiss_fft_guts.h; sourceTree = "<group>"; };
-		C818ED8D1CFB83C000B0ECCD /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fft.c; sourceTree = "<group>"; };
 		C818ED8E1CFB83C000B0ECCD /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fft.h; sourceTree = "<group>"; };
 		C818ED8F1CFB83C000B0ECCD /* kissfft.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kissfft.hh; sourceTree = "<group>"; };
-		C818ED911CFB83C000B0ECCD /* kfc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kfc.c; sourceTree = "<group>"; };
 		C818ED921CFB83C000B0ECCD /* kfc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kfc.h; sourceTree = "<group>"; };
-		C818ED931CFB83C000B0ECCD /* kiss_fastfir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fastfir.c; sourceTree = "<group>"; };
-		C818ED941CFB83C000B0ECCD /* kiss_fftnd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftnd.c; sourceTree = "<group>"; };
 		C818ED951CFB83C000B0ECCD /* kiss_fftnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftnd.h; sourceTree = "<group>"; };
-		C818ED961CFB83C000B0ECCD /* kiss_fftndr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftndr.c; sourceTree = "<group>"; };
 		C818ED971CFB83C000B0ECCD /* kiss_fftndr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftndr.h; sourceTree = "<group>"; };
-		C818ED981CFB83C000B0ECCD /* kiss_fftr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftr.c; sourceTree = "<group>"; };
 		C818ED991CFB83C000B0ECCD /* kiss_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftr.h; sourceTree = "<group>"; };
 		C818ED9A1CFB83C000B0ECCD /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		C818ED9B1CFB83C000B0ECCD /* RPAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RPAnalyzer.cpp; sourceTree = "<group>"; };
@@ -81,6 +73,12 @@
 		C818EDBC1CFB84F200B0ECCD /* FileReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileReader.cpp; sourceTree = "<group>"; };
 		C887EC6C1CFFD56C00ABD53A /* WavReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WavReader.cpp; sourceTree = "<group>"; };
 		C887EC6D1CFFD56C00ABD53A /* WavReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavReader.h; sourceTree = "<group>"; };
+		C8E78B261D0297BF00BE5CC7 /* kfc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kfc.cpp; sourceTree = "<group>"; };
+		C8E78B271D0297BF00BE5CC7 /* kiss_fastfir.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kiss_fastfir.cpp; sourceTree = "<group>"; };
+		C8E78B281D0297BF00BE5CC7 /* kiss_fftnd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kiss_fftnd.cpp; sourceTree = "<group>"; };
+		C8E78B291D0297BF00BE5CC7 /* kiss_fftndr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kiss_fftndr.cpp; sourceTree = "<group>"; };
+		C8E78B2A1D0297BF00BE5CC7 /* kiss_fftr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kiss_fftr.cpp; sourceTree = "<group>"; };
+		C8E78B301D0297C800BE5CC7 /* kiss_fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kiss_fft.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +131,6 @@
 			children = (
 				C818ED861CFB83C000B0ECCD /* BPMAnalyzer.cpp */,
 				C818ED871CFB83C000B0ECCD /* BPMAnalyzer.h */,
-				C818ED881CFB83C000B0ECCD /* dywapitchtrack.c */,
 				C818ED891CFB83C000B0ECCD /* dywapitchtrack.h */,
 				C818ED8A1CFB83C000B0ECCD /* EqualLoudnessFilter.h */,
 				C818ED8B1CFB83C000B0ECCD /* fft */,
@@ -150,8 +147,8 @@
 		C818ED8B1CFB83C000B0ECCD /* fft */ = {
 			isa = PBXGroup;
 			children = (
+				C8E78B301D0297C800BE5CC7 /* kiss_fft.cpp */,
 				C818ED8C1CFB83C000B0ECCD /* _kiss_fft_guts.h */,
-				C818ED8D1CFB83C000B0ECCD /* kiss_fft.c */,
 				C818ED8E1CFB83C000B0ECCD /* kiss_fft.h */,
 				C818ED8F1CFB83C000B0ECCD /* kissfft.hh */,
 				C818ED901CFB83C000B0ECCD /* tools */,
@@ -162,14 +159,14 @@
 		C818ED901CFB83C000B0ECCD /* tools */ = {
 			isa = PBXGroup;
 			children = (
-				C818ED911CFB83C000B0ECCD /* kfc.c */,
+				C8E78B261D0297BF00BE5CC7 /* kfc.cpp */,
+				C8E78B271D0297BF00BE5CC7 /* kiss_fastfir.cpp */,
+				C8E78B281D0297BF00BE5CC7 /* kiss_fftnd.cpp */,
+				C8E78B291D0297BF00BE5CC7 /* kiss_fftndr.cpp */,
+				C8E78B2A1D0297BF00BE5CC7 /* kiss_fftr.cpp */,
 				C818ED921CFB83C000B0ECCD /* kfc.h */,
-				C818ED931CFB83C000B0ECCD /* kiss_fastfir.c */,
-				C818ED941CFB83C000B0ECCD /* kiss_fftnd.c */,
 				C818ED951CFB83C000B0ECCD /* kiss_fftnd.h */,
-				C818ED961CFB83C000B0ECCD /* kiss_fftndr.c */,
 				C818ED971CFB83C000B0ECCD /* kiss_fftndr.h */,
-				C818ED981CFB83C000B0ECCD /* kiss_fftr.c */,
 				C818ED991CFB83C000B0ECCD /* kiss_fftr.h */,
 				C818ED9A1CFB83C000B0ECCD /* Makefile */,
 			);
@@ -262,21 +259,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E78B2F1D0297BF00BE5CC7 /* kiss_fftr.cpp in Sources */,
 				C818EDB31CFB83C000B0ECCD /* Makefile in Sources */,
+				C8E78B311D0297C800BE5CC7 /* kiss_fft.cpp in Sources */,
 				C818EDB81CFB83C000B0ECCD /* TimeToFrequencyTransformer.cpp in Sources */,
 				C818EDBF1CFB84F200B0ECCD /* FileReader.cpp in Sources */,
+				C8E78B2B1D0297BF00BE5CC7 /* kfc.cpp in Sources */,
+				C8E78B2D1D0297BF00BE5CC7 /* kiss_fftnd.cpp in Sources */,
+				C8E78B2E1D0297BF00BE5CC7 /* kiss_fftndr.cpp in Sources */,
 				C887EC6E1CFFD56C00ABD53A /* WavReader.cpp in Sources */,
-				C818EDAA1CFB83C000B0ECCD /* kfc.c in Sources */,
-				C818EDAD1CFB83C000B0ECCD /* kiss_fftnd.c in Sources */,
-				C818EDA71CFB83C000B0ECCD /* kiss_fft.c in Sources */,
 				C818EDB61CFB83C000B0ECCD /* RPCommonDSPFunctions.cpp in Sources */,
-				C818EDAF1CFB83C000B0ECCD /* kiss_fftndr.c in Sources */,
 				C80018F01CF9410C00025072 /* RippleEngine.cpp in Sources */,
-				C818EDA31CFB83C000B0ECCD /* dywapitchtrack.c in Sources */,
 				C818EDA11CFB83C000B0ECCD /* BPMAnalyzer.cpp in Sources */,
-				C818EDAC1CFB83C000B0ECCD /* kiss_fastfir.c in Sources */,
-				C818EDB11CFB83C000B0ECCD /* kiss_fftr.c in Sources */,
 				C818EDB41CFB83C000B0ECCD /* RPAnalyzer.cpp in Sources */,
+				C8E78B2C1D0297BF00BE5CC7 /* kiss_fastfir.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
