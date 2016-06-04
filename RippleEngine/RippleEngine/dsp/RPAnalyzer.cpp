@@ -89,13 +89,22 @@ pitches(std::vector<float>(0))
 {
     pathToPCMFile = inPathToPCMFile;
     reader = new FileReader(inPathToPCMFile.c_str());
-    
-#if defined(__APPLE__) || defined(__linux__)
-	const char *rawFilePathToPCM = pathToPCMFile.c_str();
-#else
-	TCHAR* rawFilePathToPCM = (TCHAR*)pathToPCMFile.c_str();
-#endif
+    RPAnalyzer(*reader,numberOfBinsPerWindow,inWindowLength,inCallbackFunction);
+}
 
+RPAnalyzer::RPAnalyzer(RippleReader& inReader, int numberOfBinsPerWindow, int inWindowLength, std::function<void(const float)> inCallbackFunction):
+callbackFunction(inCallbackFunction),
+mNumberOfBinsPerWindow(numberOfBinsPerWindow),
+windowLength(inWindowLength*2.0),
+pitches(std::vector<float>(0))
+{
+    reader = &inReader;
+#if defined(__APPLE__) || defined(__linux__)
+    const char *rawFilePathToPCM = pathToPCMFile.c_str();
+#else
+    TCHAR* rawFilePathToPCM = (TCHAR*)pathToPCMFile.c_str();
+#endif
+    
     if(!fileExists(rawFilePathToPCM))
     {
         throw std::runtime_error("PCM file does not exist.");

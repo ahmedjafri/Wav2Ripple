@@ -25,8 +25,18 @@ int main(int argc, const char * argv[]) {
     
     std::vector<float> samples = reader->read(100000, 1000);
     
-    for(int i = 0; i < samples.size(); i++) {
-        printf("Sample %i: %f \n", i, samples[i]);
+    std::function<void (const float)> trackProgress = [](const float percentage){
+        int p = 100.0 * percentage;
+        if(p % 5 == 10) {
+            printf("Analyzing: %d\n", p);
+        }
+    };
+    
+    RPAnalyzer analyzer = RPAnalyzer(*reader, 100, 1024, trackProgress);
+    
+    std::vector<float> intensities = analyzer.convertToIntensity();
+    for(int i = 0; i < intensities.size(); i++) {
+        printf("Intensity %i: %f \n", i, intensities[i]);
     }
     
 }

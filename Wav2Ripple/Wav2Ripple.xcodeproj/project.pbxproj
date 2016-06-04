@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C80018D91CF9406E00025072 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C80018D81CF9406E00025072 /* main.cpp */; };
 		C80019161CF9422D00025072 /* libRippleEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C80019151CF9420700025072 /* libRippleEngine.a */; };
+		C8E78B371D029C2F00BE5CC7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E78B361D029C2F00BE5CC7 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		C80018D51CF9406E00025072 /* Wav2Ripple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Wav2Ripple; sourceTree = BUILT_PRODUCTS_DIR; };
 		C80018D81CF9406E00025072 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C80019101CF9420700025072 /* RippleEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RippleEngine.xcodeproj; path = ../RippleEngine/RippleEngine.xcodeproj; sourceTree = "<group>"; };
+		C8E78B361D029C2F00BE5CC7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E78B371D029C2F00BE5CC7 /* Accelerate.framework in Frameworks */,
 				C80019161CF9422D00025072 /* libRippleEngine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +57,7 @@
 		C80018CC1CF9406E00025072 = {
 			isa = PBXGroup;
 			children = (
+				C8E78B361D029C2F00BE5CC7 /* Accelerate.framework */,
 				C80019101CF9420700025072 /* RippleEngine.xcodeproj */,
 				C80018D71CF9406E00025072 /* Wav2Ripple */,
 				C80018D61CF9406E00025072 /* Products */,

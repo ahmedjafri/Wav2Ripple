@@ -48,6 +48,7 @@ class RPAnalyzer {
 public:
     ~RPAnalyzer();
     RPAnalyzer(std::string pathToPCMFile, float lengthOfSong, int numberOfBinsPerWindow, int inWindowLength, std::function<void(const float)> callbackFunction);
+    RPAnalyzer(RippleReader& reader, int numberOfBinsPerWindow, int inWindowLength, std::function<void(const float)> callbackFunction);
     //int fullSongLengthTotalSamples;
     FrequencyBuffer frequencyBinsPerWindowBuffer();
     std::vector<float> convertToNormalizedEnergy(const int frequencyBinMin, const int frequencyBinMax);

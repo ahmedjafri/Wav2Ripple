@@ -41,6 +41,8 @@
 		C8E78B2E1D0297BF00BE5CC7 /* kiss_fftndr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8E78B291D0297BF00BE5CC7 /* kiss_fftndr.cpp */; };
 		C8E78B2F1D0297BF00BE5CC7 /* kiss_fftr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8E78B2A1D0297BF00BE5CC7 /* kiss_fftr.cpp */; };
 		C8E78B311D0297C800BE5CC7 /* kiss_fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8E78B301D0297C800BE5CC7 /* kiss_fft.cpp */; };
+		C8E78B331D029BDF00BE5CC7 /* dywapitchtrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8E78B321D029BDF00BE5CC7 /* dywapitchtrack.cpp */; };
+		C8E78B351D029BFF00BE5CC7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E78B341D029BFF00BE5CC7 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		C8E78B291D0297BF00BE5CC7 /* kiss_fftndr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kiss_fftndr.cpp; sourceTree = "<group>"; };
 		C8E78B2A1D0297BF00BE5CC7 /* kiss_fftr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kiss_fftr.cpp; sourceTree = "<group>"; };
 		C8E78B301D0297C800BE5CC7 /* kiss_fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kiss_fft.cpp; sourceTree = "<group>"; };
+		C8E78B321D029BDF00BE5CC7 /* dywapitchtrack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dywapitchtrack.cpp; sourceTree = "<group>"; };
+		C8E78B341D029BFF00BE5CC7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E78B351D029BFF00BE5CC7 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,7 @@
 		C80018DF1CF9410C00025072 = {
 			isa = PBXGroup;
 			children = (
+				C8E78B341D029BFF00BE5CC7 /* Accelerate.framework */,
 				C80018EA1CF9410C00025072 /* RippleEngine */,
 				C80018E91CF9410C00025072 /* Products */,
 			);
@@ -129,6 +135,7 @@
 		C818ED851CFB83C000B0ECCD /* dsp */ = {
 			isa = PBXGroup;
 			children = (
+				C8E78B321D029BDF00BE5CC7 /* dywapitchtrack.cpp */,
 				C818ED861CFB83C000B0ECCD /* BPMAnalyzer.cpp */,
 				C818ED871CFB83C000B0ECCD /* BPMAnalyzer.h */,
 				C818ED891CFB83C000B0ECCD /* dywapitchtrack.h */,
@@ -272,6 +279,7 @@
 				C80018F01CF9410C00025072 /* RippleEngine.cpp in Sources */,
 				C818EDA11CFB83C000B0ECCD /* BPMAnalyzer.cpp in Sources */,
 				C818EDB41CFB83C000B0ECCD /* RPAnalyzer.cpp in Sources */,
+				C8E78B331D029BDF00BE5CC7 /* dywapitchtrack.cpp in Sources */,
 				C8E78B2C1D0297BF00BE5CC7 /* kiss_fastfir.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
