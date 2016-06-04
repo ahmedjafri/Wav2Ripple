@@ -89,16 +89,7 @@ pitches(std::vector<float>(0))
 {
     pathToPCMFile = inPathToPCMFile;
     reader = new FileReader(inPathToPCMFile.c_str());
-    RPAnalyzer(*reader,numberOfBinsPerWindow,inWindowLength,inCallbackFunction);
-}
-
-RPAnalyzer::RPAnalyzer(RippleReader& inReader, int numberOfBinsPerWindow, int inWindowLength, std::function<void(const float)> inCallbackFunction):
-callbackFunction(inCallbackFunction),
-mNumberOfBinsPerWindow(numberOfBinsPerWindow),
-windowLength(inWindowLength*2.0),
-pitches(std::vector<float>(0))
-{
-    reader = &inReader;
+    
 #if defined(__APPLE__) || defined(__linux__)
     const char *rawFilePathToPCM = pathToPCMFile.c_str();
 #else
@@ -109,6 +100,17 @@ pitches(std::vector<float>(0))
     {
         throw std::runtime_error("PCM file does not exist.");
     }
+    
+    RPAnalyzer(*reader,numberOfBinsPerWindow,inWindowLength,inCallbackFunction);
+}
+
+RPAnalyzer::RPAnalyzer(RippleReader& inReader, int numberOfBinsPerWindow, int inWindowLength, std::function<void(const float)> inCallbackFunction):
+callbackFunction(inCallbackFunction),
+mNumberOfBinsPerWindow(numberOfBinsPerWindow),
+windowLength(inWindowLength*2.0),
+pitches(std::vector<float>(0))
+{
+    reader = &inReader;
     
     windowOverlap = windowLength*(percentOverlap/100.0f);
     mNumberOfWindows = reader->numberOfSamples()/(windowLength - windowOverlap);

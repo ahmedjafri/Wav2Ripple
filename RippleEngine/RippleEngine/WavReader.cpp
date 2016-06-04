@@ -192,13 +192,11 @@ std::vector<float> WavReader::read(int start, int length) {
                         break;
                 }
                 
-                printf("\n\n.Valid range for data values : %ld to %ld \n", low_limit, high_limit);
-
                 int bytes_per_sample = this->header.bits_per_sample/8;
                 fseek(fileHandle, headerOffset + bytes_per_sample*start, SEEK_SET);
                 int read = 0;
                 
-                for (i = 0; i <= length; i++) {
+                for (i = 0; i < length; i++) {
                     read = fread(data_buffer, sizeof(data_buffer), 1, fileHandle);
                     if (read == 1) {
                         // dump the data read
