@@ -32,7 +32,7 @@ int main(int argc, const char * argv[]) {
         }
     };
     
-    RPAnalyzer analyzer = RPAnalyzer(*reader, 100, 1024, trackProgress);
+    RPAnalyzer analyzer = RPAnalyzer(*reader, 256, 1024, trackProgress);
     
     std::vector<float> intensities = analyzer.convertToIntensity();
     for(int i = 0; i < intensities.size(); i++) {

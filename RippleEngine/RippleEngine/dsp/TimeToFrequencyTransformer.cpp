@@ -9,6 +9,8 @@
 #include "TimeToFrequencyTransformer.h"
 #include <stdlib.h>
 
+using namespace std;
+
 TimeToFrequencyTransformer::TimeToFrequencyTransformer(const float* timeDomainSignal, const size_t signalLength):
 timeSignalLength(signalLength),
 windowed(false),
@@ -21,7 +23,7 @@ frequencyBandLength(nextp2((int)signalLength)/2 + 1)
     
     fftSize = frequencyBandLength * 2.0f;
 
-#if __APPLE__
+#ifdef USE_ACCELERATE_FRAMEWORK
 	log2n = log2f(fftSize);
     fft_weights = vDSP_create_fftsetup(log2n, FFT_RADIX2);
 #endif
@@ -39,11 +41,12 @@ frequencyBandLength(nextp2((int)signalLength)/2 + 1)
         window[i] = a - b*cosf( ( 2.0f*M_PI*bin ) / ( fftSize - 1 ) );
     }
     
-#if __APPLE__
+#ifdef USE_ACCELERATE_FRAMEWORK
     inputData.realp = (float *)malloc(timeSignalLength * sizeof(float));
     inputData.imagp = (float *)malloc(timeSignalLength * sizeof(float));
 #else
-    kiss_fft_cpx* out = (kiss_fft_cpx*)std::malloc((fftSize / 2 + 1) * sizeof(kiss_fft_cpx));
+    int allocSize = (fftSize / 2) + 1;
+    out = (kiss_fft_cpx*)malloc((allocSize) * sizeof(kiss_fft_cpx));
 #endif
     
     fftBuffer = std::vector<float>(fftSize*2, 0.0f);
@@ -58,7 +61,7 @@ TimeToFrequencyTransformer::~TimeToFrequencyTransformer()
 {
     free(timeBuffer);
     free(frequencyBuffer);
-#if __APPLE__
+#ifdef USE_ACCELERATE_FRAMEWORK
     free(inputData.realp);
     free(inputData.imagp);
 #else
@@ -77,7 +80,7 @@ std::vector<float> TimeToFrequencyTransformer::getFrequencyBand()
     
     std::vector<float> returnVector(frequencyBandLength + 1,0.0f);
 
-#if __APPLE__
+#ifdef USE_ACCELERATE_FRAMEWORK
     vDSP_ctoz((COMPLEX*)fftBuffer.data(), 2, &inputData, 1, timeSignalLength);
     
     vDSP_fft_zrip(fft_weights, &inputData, 1, log2n, FFT_FORWARD);

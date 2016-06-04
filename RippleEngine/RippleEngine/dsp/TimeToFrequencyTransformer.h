@@ -13,6 +13,10 @@
 #include <vector>
 
 #if __APPLE__
+#define USE_ACCELERATE_FRAMEWORK __APPLE__
+#endif 
+
+#ifdef USE_ACCELERATE_FRAMEWORK
 #include <Accelerate/Accelerate.h>
 #else
 #include "fft/tools/kiss_fftr.h"
@@ -57,7 +61,7 @@ private:
     size_t timeSignalLength;
     
     
-#if __APPLE__
+#ifdef USE_ACCELERATE_FRAMEWORK
     FFTSetup fft_weights;
     vDSP_Length log2n;
     DSPSplitComplex inputData;

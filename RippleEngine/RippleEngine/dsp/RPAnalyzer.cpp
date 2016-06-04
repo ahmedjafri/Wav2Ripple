@@ -31,16 +31,14 @@
 #include <cassert>
 #include <stdio.h>
 
-#ifdef __APPLE__
-
-#elif __linux__
+#if defined(__APPLE__) || defined(__linux__)
 #include <sys/stat.h>
 #else
 #include <Windows.h>
 #include <tchar.h>
 #endif
 
-#if defined(__APPLE__)
+#ifdef USE_ACCELERATE_FRAMEWORK
 static bool fileExists(const char* filePath)
 {
 	if (access(filePath, F_OK) != -1) {
@@ -50,7 +48,7 @@ static bool fileExists(const char* filePath)
 		return FALSE;
 	}
 }
-#elif defined(__linux__)
+#elif defined(__linux__) || defined(__APPLE__)
 static bool fileExists(const char *filename) {
     struct stat st;
     int result = stat(filename, &st);
