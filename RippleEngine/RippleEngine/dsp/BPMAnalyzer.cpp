@@ -9,7 +9,7 @@
 #include "BPMAnalyzer.h"
 #include "TimeToFrequencyTransformer.h"
 #include "RPCommonDSPFunctions.h"
-#include "Globals.h"
+#include "../Globals.h"
 
 #include <algorithm>
 

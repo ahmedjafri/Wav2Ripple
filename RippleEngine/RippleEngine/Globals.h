@@ -94,7 +94,7 @@ static int FIELDS_PER_VERTEX UNUSED_IDENTIFIER = 8; //position-3,normal-3,textur
 //static char RIPPLE_FILE[12] __unused =  "song.ripple";
 static float TIME_SCALE UNUSED_IDENTIFIER = SCALE;
 static int SAMPLE_LENGTH UNUSED_IDENTIFIER = 2048 * SCALE;
-long SAMPLE_RATE = 44100*SCALE;
+static long SAMPLE_RATE = 44100*SCALE;
 #define TIME_INTERVAL (8192.0f / (float)SAMPLE_RATE)
 static int BUFFER_OFFSETS UNUSED_IDENTIFIER = 4;
 

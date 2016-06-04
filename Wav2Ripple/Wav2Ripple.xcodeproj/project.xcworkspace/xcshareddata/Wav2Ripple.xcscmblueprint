@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "835AF3C0F121566EBFD0CB8A14F085F02824F459",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2A8506E28C97D77EA2C7DAED2610F6F586CD2CC2" : 0,
+    "835AF3C0F121566EBFD0CB8A14F085F02824F459" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "559BB16C-2A70-4071-8119-ED7F22B87EF1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2A8506E28C97D77EA2C7DAED2610F6F586CD2CC2" : "",
+    "835AF3C0F121566EBFD0CB8A14F085F02824F459" : "Wav2Ripple\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Wav2Ripple",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Wav2Ripple\/Wav2Ripple.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/ahmedjafri\/tin.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2A8506E28C97D77EA2C7DAED2610F6F586CD2CC2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/ahmedjafri\/wav2ripple.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "835AF3C0F121566EBFD0CB8A14F085F02824F459"
+    }
+  ]
+}

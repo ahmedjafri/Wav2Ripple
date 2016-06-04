@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include "Globals.h"
+#include "../Globals.h"
 #include "RPAnalyzer.h"
 #include "EqualLoudnessFilter.h"
 #include <stdexcept>
@@ -18,7 +18,7 @@
 #include "TimeToFrequencyTransformer.h"
 #include "RPCommonDSPFunctions.h"
 #include "dywapitchtrack.h"
-#include "FileReader.h"
+#include "../FileReader.h"
 
 #define windowTime .05
 #define percentOverlap 50.0f
