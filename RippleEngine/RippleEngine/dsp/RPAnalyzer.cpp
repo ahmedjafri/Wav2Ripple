@@ -344,7 +344,7 @@ std::vector<float> RPAnalyzer::convertToIntensity()
     assert(!isnan(energyBuffer[0]));
     
 #if DEBUG
-    writeFloatVectorToTextFile(std::string("intensities.txt"), energyBuffer);
+    //writeFloatVectorToTextFile(std::string("intensities.txt"), energyBuffer);
 #endif
     
     return energyBuffer;

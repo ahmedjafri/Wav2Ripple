@@ -39,6 +39,7 @@
 		C80018D81CF9406E00025072 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C80019101CF9420700025072 /* RippleEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RippleEngine.xcodeproj; path = ../RippleEngine/RippleEngine.xcodeproj; sourceTree = "<group>"; };
 		C8E78B361D029C2F00BE5CC7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C8E78B391D02A89600BE5CC7 /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		C80018D71CF9406E00025072 /* Wav2Ripple */ = {
 			isa = PBXGroup;
 			children = (
+				C8E78B391D02A89600BE5CC7 /* json.hpp */,
 				C80018D81CF9406E00025072 /* main.cpp */,
 			);
 			path = Wav2Ripple;
