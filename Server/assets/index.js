@@ -108,7 +108,43 @@ $(document).ready(function() {
 	    requestAnimationFrame(drawCircle);
 	}
 
-	drawCircle();
+	function drawRectangles() {
+		mainContext.clearRect(0, 0, canvasWidth, canvasHeight);
+     
+	    // color in the background
+	    mainContext.fillStyle = "#EEEEEE";
+	    mainContext.fillRect(0, 0, canvasWidth, canvasHeight);
+	     
+	    if(playing) {
+	    	var time = player.getCurrentTime(); 
+	    	if(time == lastTime) {
+	    		elaspedTime = (new Date()) - lastDate;
+	    		elaspedTime /= 1000; // remove ms
+	    		elaspedTime += time;
+	    		var time = elaspedTime;
+	    	} else {
+	    		lastTime = time;
+	    		lastDate = new Date();
+	    	}
+
+	    	var i = Math.floor(time * 48000.0/1024.0);
+	    	var min = Math.floor(time/60);
+	    	console.log("index:" + i + " - " + min + ":" + (time-(min*60)));
+		     
+		    var rects = 50;
+		    var width = canvasWidth / rects;
+		    for(var k = 0; k < rects; k++) {
+		    	var height = intensities[i+k] * canvasHeight;
+				mainContext.fillStyle="#006699";
+				mainContext.fillRect(k*width,canvasHeight - height,width, height);
+		    }
+	    }
+	     
+	    requestAnimationFrame(drawRectangles);
+	}
+
+	//drawCircle();
+	drawRectangles();
 
 	function initializePlayer(url) {
 
@@ -147,6 +183,7 @@ $(document).ready(function() {
 			  		done = true;
 				}
 				playing = true;
+				lastDate = new Date();
 			} else {
 				playing = false;
 			}
