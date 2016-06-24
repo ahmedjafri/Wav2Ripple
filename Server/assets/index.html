@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+<script src="index.js"></script>
+<style>
+canvas {
+    border: 3px #CCC solid;
+}
+</style>
+
+</head>
+
+<body>
+
+<form method="POST">
+Youtube url: <input type="text" name="url" id="url" size="100">
+<input type="submit">
+</form>
+
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+
+<div id="container">
+    <canvas id="myCanvas" height="450" width="450"></canvas>
+</div>
+
+<div id="player"></div>
+
+</body>
+
+</html>
